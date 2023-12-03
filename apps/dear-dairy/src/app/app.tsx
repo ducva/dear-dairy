@@ -1,14 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import '@mantine/core/styles.css';
 
-import NxWelcome from './nx-welcome';
+import { MantineProvider } from '@mantine/core';
+import AddNoteForm from '../components/AddNoteForm';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="dear-dairy" />
-    </div>
+    <MantineProvider>
+      <AddNoteForm />
+    </MantineProvider>
   );
+
 }
 
 export default App;
