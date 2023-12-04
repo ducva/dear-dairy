@@ -1,6 +1,6 @@
-import { http, HttpResponse } from 'msw'
+import { http } from 'msw'
 import { getUsers } from './users'
 
 export const handlers = [
-  http.get('/users', getUsers),
+  http.get('/api/users', getUsers),
 ]

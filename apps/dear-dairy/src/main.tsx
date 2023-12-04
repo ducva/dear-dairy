@@ -11,10 +11,6 @@ import App from './app/app';
 import { AppConfig } from './configs'
 
 async function enableMocking() {
-  if (process.env.NODE_ENV !== 'development') {
-    return
-  }
-
   const { worker } = await import('./mocks/browser')
 
   // `worker.start()` returns a Promise that resolves
