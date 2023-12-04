@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@auth0/auth0-react':
+    specifier: ^2.2.3
+    version: 2.2.3(react-dom@18.2.0)(react@18.2.0)
   '@mantine/carousel':
     specifier: ^7.2.2
     version: 7.2.2(@mantine/core@7.2.2)(@mantine/hooks@7.2.2)(embla-carousel-react@8.0.0-rc15)(react@18.2.0)
@@ -184,6 +187,21 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
+
+  /@auth0/auth0-react@2.2.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3B0KA/ky1yA6iQK8045N8U0ZBkmDB3ElCSwJuxNbAoKmZBc4+DjzZhWRxYsgb9PrfHC14Lr2h4950A3PEFDULA==}
+    peerDependencies:
+      react: ^16.11.0 || ^17 || ^18
+      react-dom: ^16.11.0 || ^17 || ^18
+    dependencies:
+      '@auth0/auth0-spa-js': 2.1.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@auth0/auth0-spa-js@2.1.2:
+    resolution: {integrity: sha512-xdA65Z/U7++Y7L9Uwh8Q8OVOs6qgFz+fb7GAzHFjpr1icO37B//xdzLXm7ZRgA19RWrsNe1nme3h896igJSvvw==}
+    dev: false
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
