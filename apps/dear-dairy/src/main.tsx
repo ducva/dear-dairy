@@ -1,5 +1,6 @@
 import * as ReactDOM from 'react-dom/client';
 import { Auth0Provider } from '@auth0/auth0-react'
+import { BrowserRouter } from 'react-router-dom'
 
 import App from './app/app';
 import { AppConfig } from './configs'
@@ -20,6 +21,8 @@ root.render(
   <Auth0Provider
     {...providerConfig}
   >
-    <App />
-  </Auth0Provider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Auth0Provider >
 );
