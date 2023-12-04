@@ -1,4 +1,4 @@
-import { Flex } from "@mantine/core"
+import { Container } from "@mantine/core"
 import { Outlet, useNavigate } from "react-router-dom"
 import { useAuth0 } from "@auth0/auth0-react"
 import { useEffect } from "react"
@@ -17,8 +17,8 @@ export const Layout = () => {
   }, [isAuthenticated, user])
 
   return (
-    <Flex>
+    <Container>
       <Outlet />
-    </Flex>
+    </Container>
   )
 }
